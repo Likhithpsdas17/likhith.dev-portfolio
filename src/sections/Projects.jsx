@@ -14,8 +14,8 @@ const projectsData = [
       { key: "Trust Engine", val: "Trust Analytics" },
       { key: "System Scope", val: "Lifecycle Tracking" }
     ],
-    github: "https://github.com/Likhithpsdas17",
-    live: "#"
+    github: "https://github.com/Likhithpsdas17/DataTwinX-FullStack",
+    live: "https://datatwinx-frontend.vercel.app",
   },
   {
     title: "FocusForge",
@@ -27,8 +27,8 @@ const projectsData = [
       { key: "State Persistence", val: "Local Storage" },
       { key: "Target Deployment", val: "Vercel Deploy" }
     ],
-    github: "https://github.com/Likhithpsdas17",
-    live: "#"
+    github: "https://github.com/Likhithpsdas17/FocusForge",
+    live: "https://focus-forge-nine-zeta.vercel.app/",
   },
   {
     title: "QuickBite",
@@ -39,8 +39,8 @@ const projectsData = [
       { key: "State Layer", val: "Redux Cart Mgmt" },
       { key: "Data Flow", val: "Search & Filtering" }
     ],
-    github: "https://github.com/Likhithpsdas17",
-    live: "#"
+    github: "https://github.com/Likhithpsdas17/Frontend_Internship",
+    live: "https://frontend-internship-gamma.vercel.app",
   },
   {
     title: "YouTube Clone",
@@ -51,8 +51,8 @@ const projectsData = [
       { key: "Access Layer", val: "Authentication" },
       { key: "Data Pipeline", val: "MongoDB Integration" }
     ],
-    github: "https://github.com/Likhithpsdas17",
-    live: "#"
+    github: "https://github.com/Likhithpsdas17/youtube-clone",
+    live: "https://youtube-clone-chi-mauve.vercel.app",
   },
   {
     title: "Weather Insights",
@@ -63,8 +63,7 @@ const projectsData = [
       { key: "Pipeline Target", val: "API Integration" },
       { key: "Display Layer", val: "Forecast Dashboard" }
     ],
-    github: "https://github.com/Likhithpsdas17",
-    live: "#"
+    github: "https://github.com/Likhithpsdas17/Weather-Forecast",
   }
 ];
 
@@ -91,7 +90,7 @@ export default function Projects() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_10%,#6366f102,transparent_35%)] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">
-        
+
         {/* Header Block */}
         <div className="mb-16 text-left">
           <span className="font-['Space_Grotesk'] text-xs font-bold text-[#6366F1] uppercase tracking-[0.2em] block mb-2">
@@ -103,7 +102,7 @@ export default function Projects() {
         </div>
 
         {/* Responsive Grid Structure Container */}
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center"
           variants={containerVariants}
           initial="hidden"
@@ -130,8 +129,8 @@ export default function Projects() {
                 {/* Technology Badges Matrix */}
                 <div className="flex flex-wrap gap-1.5 mb-5">
                   {project.tech.map((techItem, tIdx) => (
-                    <span 
-                      key={tIdx} 
+                    <span
+                      key={tIdx}
                       className="text-[10px] font-semibold font-['Inter'] px-2 py-0.5 rounded bg-[#0B1120] border border-slate-800 text-slate-400"
                     >
                       {techItem}
@@ -162,19 +161,19 @@ export default function Projects() {
 
               {/* Action Anchors Trigger Block */}
               <div className="flex items-center justify-between pt-4 border-t border-slate-900/40 mt-auto w-full">
-                <a 
-                  href={project.github} 
-                  target="_blank" 
-                  rel="noreferrer" 
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex items-center gap-1.5 text-xs font-semibold font-['Inter'] text-[#94A3B8] hover:text-[#F8FAFC] transition-colors"
                 >
                   <FaGithub size={13} /> Code
                 </a>
-                <a 
-                  href={project.live} 
+                <a
+                  href={project.live}
                   className="inline-flex items-center gap-1 text-xs font-semibold font-['Inter'] text-[#6366F1] hover:text-purple-400 group/link"
                 >
-                  Live Demo 
+                  Live Demo
                   <ArrowUpRight size={13} className="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform duration-150" />
                 </a>
               </div>
@@ -182,7 +181,7 @@ export default function Projects() {
             </motion.div>
           ))}
         </motion.div>
-        
+
       </div>
     </section>
   );
