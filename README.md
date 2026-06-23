@@ -4,7 +4,7 @@ A modern and professional portfolio website built to showcase my skills, project
 
 ## Live Demo
 
-Portfolio: https://your-portfolio-link.vercel.app/
+Portfolio: likhith-dev-portfolio.vercel.app
 
 ## About
 
